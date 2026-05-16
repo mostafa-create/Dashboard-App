@@ -4,6 +4,14 @@ A high-performance, responsive administrative dashboard built as a **Practical E
 
 ---
 
+## 📱 Android-Focused Responsive Features
+While showcased as a spacious management console, the architecture explicitly handles mobile design constraints native to the Android mobile ecosystem:
+* **Dynamic Viewport Scaling:** Monitors the physical screen context. On an Android mobile device, it folds the card layout grid down into a linear **1-column structure** for vertical scrolling, while expanding smoothly up to **4 columns** on tablets, desktops, or web browsers.
+* **Layout Constraint Protection:** Employs fluid responsive constraints on all critical row sub-structures. This guarantees that varying Android aspect ratios and mobile device screen width variations will never trigger horizontal rendering overflow design bugs (`A RenderFlex overflowed...`).
+* **Mobile Real Estate Conservation:** The navigation sidebar keeps track of reactive layout flags. On compact mobile viewports, it folds into a narrow 80px tracker to preserve rendering space for core metric tools.
+
+---
+
 ## 🚀 Practical Exam Tech Stack
 * **Language:** Dart 
 * **Framework Core:** Flutter (Cross-Platform Android Target Optimization)
@@ -29,7 +37,7 @@ As documented in our official presentation grid, engineering responsibilities an
 * **Mostafa Yassin Abdellatif**
   * **Role:** *Data Components* — Direct engineering owner of the dynamic transactions list featuring inline ternary conditional formatting, and the custom vertical timeline log feed.
 * **Omar Elsayed Mohamed**
-  * **Role:** *Data Visualization & Analytics* — Implementation lead for rendering interactive, animated curves and source analytics widgets utilizing hardware-accelerated chart paths.
+  * **Role:** *KPIs & Summary Cards* — Implementation lead for designing high-impact metric nodes, trend indicators, and high-level card components.
 * **Somaya Asaad Fawzy**
   * **Role:** *UI/UX Styling* — Core visual designer establishing global hex palettes, alpha transparency modifications, text hierarchy tokens, and dark theme specifications.
 * **Mariam Fathy Khalaf**
